@@ -79,7 +79,7 @@
     </script>
 
     <script>
-    //===== 外資系企業数（2012年 =====//
+    //===== 外資系企業数（2012年） =====//
         const labels_02 = [
             '千代田区',
             '中央区',
@@ -108,6 +108,38 @@
         
         const graph_02 = new Chart(
         document.getElementById('graph_02'), config_02 );
+    </script>
+
+    <script>
+    //===== 外資系企業数（2012-2022年 差分） =====//
+        const labels_03 = [
+            '千代田区',
+            '中央区',
+            '港区',
+            '渋谷区',
+            '新宿区',
+            '品川区',
+            '江東区',
+        ];
+        
+        const data_03 = {
+            labels: labels_03,
+            datasets: [{
+                label: '外資系企業数（2012-2022年 差分）',
+                backgroundColor: 'rgba(0, 255, 0, 0.5)',
+                borderColor: 'rgba(0, 255, 0, 0.5)',
+                data: [164, 97, 255, 57, 36, 47, 13],
+            }]
+        };
+        
+        const config_03 = {
+            type: 'bar',
+            data: data_03,
+            options: {}
+        };
+        
+        const graph_03 = new Chart(
+        document.getElementById('graph_03'), config_03 );
     </script>
 
 </body>
